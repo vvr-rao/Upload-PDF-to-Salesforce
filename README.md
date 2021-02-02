@@ -9,3 +9,4 @@ Note: The Salesforce REST API reuires the body of the attachment to be in Base64
 Prerquisites:
 I created a Connected App in my org.
 
+Tested using Python 3.5.2 on Ubuntu 16
