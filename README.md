@@ -4,7 +4,7 @@ The code creates an Account and attaches a file to it. It  assumes the file is l
 
 My initial version used Simple Salesforce but we were leery of downloading it to our server, hence stuck to more 'well known' packages.
 
-Note: The Salesforce REST API reuires the body of the attachment to be in Base64. That is the key consideration if you need to modify the code to accept files differently (e.g. read from another application)
+Note: The Salesforce REST API requires the body of the attachment to be in Base64. That is the key consideration if you need to modify the code to accept files differently (e.g. read from another application)
 
 Prerquisites:
 I created a Connected App in my org.
