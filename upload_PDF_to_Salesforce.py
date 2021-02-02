@@ -4,6 +4,7 @@ from ftplib import FTP
 import json
 import base64
 
+###LOGIN AND GET A SESSION ID
 data = {
                 'grant_type': 'password',
                 'client_id': '<INSERT_HERE>',
@@ -17,9 +18,10 @@ response = r.json()
 sessionId = response['access_token']
 instance = response['instance_url']
 
-print ('sessionId: ' + sessionId)
-print ('instance: ' + instance)
+##print ('sessionId: ' + sessionId)
+##print ('instance: ' + instance)
 
+###CREATE AN ACCOUNT
 data2 = {
             'Name': 'test integration'
         }
@@ -42,6 +44,7 @@ accountId = response2['id']
 
 print(accountId)
 
+####OPEN A FILE, CONVERT TO BASE 64 and UPLOAD
 
 f = open('Output.PDF', 'rb')
 file_content = f.read()
@@ -59,7 +62,6 @@ data3 = {
         }
 
 payload2 = json.dumps(data3)
-
 
 
 
