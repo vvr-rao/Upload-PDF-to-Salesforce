@@ -10,3 +10,5 @@ Prerquisites:
 I created a Connected App in my org.
 
 Tested using Python 3.5.2 on Ubuntu 16
+
+EDIT: Also added code to Download a file from Salesforce and upload to S3 and SFTP: SFDC-to-FTP-and-S3.py
